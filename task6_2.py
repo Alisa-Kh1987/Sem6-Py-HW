@@ -5,7 +5,6 @@
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
 
-
 #Было
 # from random import randint
 
@@ -27,6 +26,5 @@
 
 from random import randint
 my_list = [randint(-10, 10) for i in range(10)]
-print(my_list)
 result_list = [my_list[i]*my_list[-i-1] for i in range((len(my_list)+1)//2)]
-print(result_list)
+print(f'Исходный список: {my_list}\nРезультат: {result_list}')
